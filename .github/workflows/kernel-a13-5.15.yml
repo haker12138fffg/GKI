@@ -11,11 +11,11 @@ on:
         type: boolean
         default: true
       kernelsu_variant:
-        required: false
+        required: true
         type: string
         default: Next
       kernelsu_branch:
-        required: false
+        required: true
         type: string
         default: Stable
       version:
