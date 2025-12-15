@@ -11,11 +11,11 @@ on:
         type: boolean
         default: true
       kernelsu_variant:
-        required: true
+        required: false
         type: string
         default: Next
       kernelsu_branch:
-        required: true
+        required: false
         type: string
         default: Stable
       version:
@@ -29,7 +29,7 @@ on:
         default: true
       use_kpm:
         description: '是否开启KPM功能?'
-        required: true
+        required: false
         type: boolean
         default: true
       use_O2:
@@ -39,7 +39,7 @@ on:
         default: false
       BBG:
         description: "是否启用内核层面阻止对关键分区/设备节点的非法写入(LSM)？"
-        required: true
+        required: false
         type: boolean
         default: true
 jobs:
@@ -65,10 +65,10 @@ jobs:
           #   os_patch_level: "2024-05"
           # - sub_level: "167"
           #   os_patch_level: "2024-11"
-          - sub_level: "170"
-            os_patch_level: "2025-01"
-          - sub_level: "178"
-            os_patch_level: "2025-03"
+          # - sub_level: "170"
+          #  os_patch_level: "2025-01"
+          # - sub_level: "178"
+          #  os_patch_level: "2025-03"
           - sub_level: "180"
             os_patch_level: "2025-05"  
           - sub_level: "X"
